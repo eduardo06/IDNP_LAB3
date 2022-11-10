@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".ActivityPostulanteRegistro" >
+    tools:context=".ActivityPostulanteRegistro"
+    android:background="@drawable/fondo_degradado">
 
     <TextView
         android:id="@+id/textView2"
@@ -74,6 +75,8 @@
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registrar" />
+        android:text="Registrar"
+        android:background="@drawable/button_rounder"
+        android:drawableEnd="@drawable/ic_registrar"/>
 
 </LinearLayout>

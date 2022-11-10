@@ -25,7 +25,7 @@ class ActivityPostulanteInfo : AppCompatActivity() {
         val getNacimiento = findViewById<TextView>(R.id.txtNacimiento)
         val getColegio = findViewById<TextView>(R.id.txtColegio)
         val getCarrera = findViewById<TextView>(R.id.txtCarrera)
-        val canelar = findViewById<Button>(R.id.btnCancelar)
+
 
         buscar.setOnClickListener{
 
@@ -39,11 +39,6 @@ class ActivityPostulanteInfo : AppCompatActivity() {
                     getCarrera.text = i.carrera
                 }
             }
-        }
-
-        canelar.setOnClickListener{
-            val intent = Intent(this,ActivityMenu::class.java)
-            startActivity(intent)
         }
     }
 }

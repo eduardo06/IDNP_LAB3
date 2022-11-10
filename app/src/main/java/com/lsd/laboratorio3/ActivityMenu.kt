@@ -12,6 +12,7 @@ class ActivityMenu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
+        //arreglo de postulantes
         val listaPostulantes:MutableList<Postulante> = mutableListOf()
         val infoPost = findViewById<Button>(R.id.btnInfoPost)
 
@@ -32,15 +33,12 @@ class ActivityMenu : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-        else {
 
-            val new = findViewById<Button>(R.id.btnNuevo)
-            val infoPost = findViewById<Button>(R.id.btnInfoPost)
+        val new = findViewById<Button>(R.id.btnNuevo)
 
-            new.setOnClickListener{
-                val intent = Intent(this,ActivityPostulanteRegistro::class.java)
-                startActivity(intent)
-            }
+        new.setOnClickListener{
+            val intent = Intent(this,ActivityPostulanteRegistro::class.java)
+            startActivity(intent)
         }
     }
 }
